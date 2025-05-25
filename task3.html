@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 3</title>
+    <script>
+        console.log("Задача 3");
+        console.log('Вивести всі двозначні числа, сума квадратів цифр яких ділиться на 13.');
+        for (let num = 10; num <= 99; num++) {
+            const a = Math.floor(num / 10);
+            const b = num % 10;
+            const sumSq = a * a + b * b;
+            if (sumSq % 13 === 0) {
+                console.log(num);
+            }
+        }
+    </script>
+</head>
+<body></body>
+</html>

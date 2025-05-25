@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 4</title>
+    <script>
+        const number = prompt("Введіть ціле число:");
+        const N = parseInt(prompt("Введіть N:"));
+        const K = parseInt(prompt("Введіть K:"));
+
+        let count = 0;
+        const digits = number.split('').map(d => parseInt(d));
+
+        for (const digit of digits) {
+            if (!isNaN(digit) && digit % N === 0) {
+                count++;
+            }
+        }
+
+        const first = digits[0];
+        const last = digits[digits.length - 1];
+        const sum = first + last;
+
+        console.log("Задача 4");
+        console.log('Скільки цифр в даному числі кратні N? Чи правильно, що в даному числі сума першої та останньої дорівнює K?');
+        console.log(`Введене число: ${number}`);
+        console.log(`Кількість цифр, кратних ${N}: ${count}`);
+        console.log(`Сума першої (${first}) та останньої (${last}): ${sum}`);
+        console.log(sum === K ? `Так, сума дорівнює ${K}` : `Ні, сума не дорівнює ${K}`);
+    </script>
+</head>
+<body></body>
+</html>

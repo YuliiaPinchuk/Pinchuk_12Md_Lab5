@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 2</title>
+    <script>
+        const N = parseInt(prompt("Введіть значення N:"));
+        let count = 0, sum = 0;
+
+        console.log("Задача 2");
+        console.log('Ввести послідовність натуральних чисел менших за N та обчислити кількість і суму тих членів послідовності, які діляться на 5 і не діляться на 7.');
+        console.log(`Послідовність чисел менших за ${N}:`);
+
+        for (let i = 1; i < N; i++) {
+            if (i % 5 === 0 && i % 7 !== 0) {
+                console.log(i);
+                count++;
+                sum += i;
+            }
+        }
+
+        console.log(`Кількість: ${count}`);
+        console.log(`Сума: ${sum}`);
+    </script>
+</head>
+<body></body>
+</html>

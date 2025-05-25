@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 1</title>
+    <script>
+        const x1 = parseFloat(prompt("Введіть x1:"));
+        const y1 = parseFloat(prompt("Введіть y1:"));
+        const x2 = parseFloat(prompt("Введіть x2:"));
+        const y2 = parseFloat(prompt("Введіть y2:"));
+        const x3 = parseFloat(prompt("Введіть x3:"));
+        const y3 = parseFloat(prompt("Введіть y3:"));
+
+        console.log("Задача 1");
+        console.log('Ввести координати точок A1(x1,y1), A2(x2,y2), A3(x3,y3) і визначити, чи лежать ці точки на одній прямій. Відповідь вивести у вигляді повідомлення у консолі.');
+        console.log(`Введені координати: A1(${x1}, ${y1}), A2(${x2}, ${y2}), A3(${x3}, ${y3})`);
+
+        const result = (x2 - x1)*(y3 - y1) === (y2 - y1)*(x3 - x1);
+        console.log(result ? "Точки лежать на одній прямій" : "Точки не лежать на одній прямій");
+    </script>
+</head>
+<body></body>
+</html>
